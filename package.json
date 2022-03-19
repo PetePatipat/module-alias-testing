@@ -1,0 +1,21 @@
+{
+  "name": "module-alias-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "NODE_ENV=alpha jest --runInBand --forceExit --testTimeout=15000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.5.1",
+    "module-alias": "^2.2.2"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@nested": "src/nested"
+  }
+}
